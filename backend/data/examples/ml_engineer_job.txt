@@ -1,0 +1,37 @@
+Machine Learning Engineer — Production ML Platform
+DataDriven Corp | Hybrid (London) | Full-time
+
+About the Role
+We are looking for a Machine Learning Engineer to build and maintain our production ML platform. You will work across the full ML lifecycle: data pipelines, model training, evaluation, deployment, and monitoring.
+
+Required Qualifications
+- 4+ years of experience in machine learning engineering
+- Strong Python skills and deep knowledge of scikit-learn and PyTorch or TensorFlow
+- Experience with the full ML lifecycle: training, evaluation, deployment, monitoring
+- Proficiency with MLflow or Weights & Biases for experiment tracking and model registry
+- Experience building and maintaining data pipelines using Spark or similar
+- Knowledge of feature engineering and model evaluation techniques
+- Experience deploying models as REST APIs (FastAPI, Flask)
+- Familiarity with Docker and containerised workloads
+- Experience with cloud platforms: AWS SageMaker or GCP Vertex AI
+- Strong SQL and data manipulation skills
+
+Preferred Qualifications
+- Experience with Kubeflow or Airflow for ML pipeline orchestration
+- Familiarity with model monitoring and drift detection (Evidently, WhyLogs)
+- Knowledge of distributed training techniques
+- Experience with NLP models and transformer architectures
+- Familiarity with LLM fine-tuning or RAG for ML products
+- Kubernetes experience
+- CI/CD experience with GitHub Actions or GitLab CI
+
+Responsibilities
+- Build robust, reproducible ML training pipelines
+- Maintain model monitoring and drift detection systems
+- Collaborate with data scientists to productionise models
+- Optimise model inference for latency and cost
+- Implement automated testing for ML components
+- Maintain MLOps infrastructure and tooling
+
+Tech Stack
+Python, PyTorch, scikit-learn, MLflow, Apache Spark, Airflow, Docker, AWS SageMaker, PostgreSQL, GitHub Actions

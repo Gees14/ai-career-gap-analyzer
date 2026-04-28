@@ -1,0 +1,178 @@
+skills:
+  Machine Learning:
+    - skill: machine learning
+      synonyms: [ml, supervised learning, unsupervised learning, statistical learning]
+    - skill: regression
+      synonyms: [linear regression, logistic regression, ridge, lasso]
+    - skill: classification
+      synonyms: [binary classification, multiclass classification]
+    - skill: clustering
+      synonyms: [k-means, dbscan, hierarchical clustering]
+    - skill: random forest
+      synonyms: [gradient boosting, xgboost, lightgbm, catboost, ensemble methods]
+    - skill: scikit-learn
+      synonyms: [sklearn, scikit learn]
+    - skill: feature engineering
+      synonyms: [feature selection, feature extraction, dimensionality reduction]
+    - skill: model evaluation
+      synonyms: [cross-validation, hyperparameter tuning, grid search, model selection]
+
+  Deep Learning:
+    - skill: deep learning
+      synonyms: [neural networks, artificial neural networks, ann]
+    - skill: pytorch
+      synonyms: [torch, pytorch lightning]
+    - skill: tensorflow
+      synonyms: [tf, keras, tensorflow keras]
+    - skill: convolutional neural network
+      synonyms: [cnn, convnet, image classification, object detection]
+    - skill: recurrent neural network
+      synonyms: [rnn, lstm, gru, sequence modeling]
+    - skill: backpropagation
+      synonyms: [gradient descent, adam optimizer, sgd]
+
+  NLP:
+    - skill: natural language processing
+      synonyms: [nlp, text processing, text analysis]
+    - skill: transformers
+      synonyms: [hugging face, huggingface, bert, distilbert, roberta, attention mechanism, transformer models]
+    - skill: text classification
+      synonyms: [sentiment analysis, intent classification, topic modeling]
+    - skill: named entity recognition
+      synonyms: [ner, information extraction, entity extraction]
+    - skill: text embeddings
+      synonyms: [word embeddings, word2vec, glove, sentence embeddings, sentence transformers]
+    - skill: tokenization
+      synonyms: [tokenizer, bpe, byte pair encoding, subword tokenization]
+    - skill: question answering
+      synonyms: [qa, reading comprehension, extractive qa]
+
+  Generative AI:
+    - skill: large language models
+      synonyms: [llm, large language model, llms, generative ai, genai]
+    - skill: prompt engineering
+      synonyms: [few-shot prompting, chain of thought, zero-shot, system prompt]
+    - skill: retrieval augmented generation
+      synonyms: [rag, retrieval-augmented generation, retrieval augmented generation, rag pipeline]
+    - skill: fine-tuning
+      synonyms: [lora, qlora, peft, parameter efficient fine-tuning, instruction tuning, sft]
+    - skill: openai api
+      synonyms: [gpt-4, gpt-3.5, chatgpt api, openai]
+    - skill: langchain
+      synonyms: [lang chain, llm orchestration, llm framework]
+    - skill: llama
+      synonyms: [llama2, llama3, meta llama, open source llm]
+    - skill: anthropic claude
+      synonyms: [claude api, claude 3]
+
+  LLMOps:
+    - skill: vector database
+      synonyms: [vector db, semantic search, chromadb, qdrant, pinecone, faiss, weaviate, pgvector]
+    - skill: llm evaluation
+      synonyms: [llm eval, ragas, trulens, llm benchmarking, model evaluation]
+    - skill: llm deployment
+      synonyms: [model serving, inference server, triton inference, vllm, text generation inference]
+    - skill: llm monitoring
+      synonyms: [hallucination detection, output validation, guardrails, llm observability]
+    - skill: agent frameworks
+      synonyms: [ai agents, autonomous agents, tool use, function calling, agentic workflows]
+
+  MLOps:
+    - skill: mlflow
+      synonyms: [ml flow, experiment tracking, model registry, mlflow tracking]
+    - skill: model deployment
+      synonyms: [model serving, model inference, bentoml, torchserve]
+    - skill: model monitoring
+      synonyms: [data drift, model drift, concept drift, evidently, whylogs]
+    - skill: feature store
+      synonyms: [feast, tecton, hopsworks]
+    - skill: kubeflow
+      synonyms: [kfp, kubeflow pipelines, ml pipeline]
+    - skill: airflow
+      synonyms: [apache airflow, workflow orchestration, dag]
+    - skill: weights and biases
+      synonyms: [wandb, experiment tracking]
+
+  Data Engineering:
+    - skill: python
+      synonyms: [python3, python programming]
+    - skill: pandas
+      synonyms: [dataframe, numpy, data manipulation]
+    - skill: sql
+      synonyms: [mysql, postgresql, postgres, sqlite, relational database, query]
+    - skill: spark
+      synonyms: [apache spark, pyspark, distributed computing]
+    - skill: kafka
+      synonyms: [apache kafka, event streaming, message queue]
+    - skill: data pipeline
+      synonyms: [etl, elt, data ingestion, batch processing, streaming]
+
+  Cloud:
+    - skill: aws
+      synonyms: [amazon web services, s3, ec2, sagemaker, lambda, aws cloud]
+    - skill: gcp
+      synonyms: [google cloud platform, vertex ai, bigquery, google cloud]
+    - skill: azure
+      synonyms: [microsoft azure, azure ml, azure openai]
+    - skill: kubernetes
+      synonyms: [k8s, container orchestration, helm]
+    - skill: docker
+      synonyms: [containers, dockerfile, containerization]
+    - skill: terraform
+      synonyms: [infrastructure as code, iac]
+
+  Software Engineering:
+    - skill: git
+      synonyms: [version control, github, gitlab, git workflow]
+    - skill: rest api
+      synonyms: [restful api, http api, api design, web api]
+    - skill: system design
+      synonyms: [distributed systems, scalability, architecture]
+    - skill: object oriented programming
+      synonyms: [oop, design patterns, solid principles]
+    - skill: data structures and algorithms
+      synonyms: [algorithms, complexity, big o]
+
+  Backend APIs:
+    - skill: fastapi
+      synonyms: [fast api, fastapi python]
+    - skill: flask
+      synonyms: [flask python, flask api]
+    - skill: django
+      synonyms: [django rest framework, drf]
+    - skill: microservices
+      synonyms: [service oriented architecture, soa, grpc]
+    - skill: asynchronous programming
+      synonyms: [async, asyncio, concurrent programming]
+
+  Computer Vision:
+    - skill: computer vision
+      synonyms: [cv, image processing, visual recognition]
+    - skill: opencv
+      synonyms: [open cv, image manipulation]
+    - skill: yolo
+      synonyms: [object detection, yolov8, real-time detection]
+    - skill: image segmentation
+      synonyms: [semantic segmentation, instance segmentation]
+
+  Databases:
+    - skill: mongodb
+      synonyms: [mongo, nosql, document database]
+    - skill: redis
+      synonyms: [in-memory database, caching, cache]
+    - skill: elasticsearch
+      synonyms: [elastic search, full text search]
+
+  DevOps:
+    - skill: ci/cd
+      synonyms: [continuous integration, continuous deployment, continuous delivery, github actions, gitlab ci, jenkins]
+    - skill: linux
+      synonyms: [bash scripting, shell, unix, command line]
+    - skill: monitoring
+      synonyms: [prometheus, grafana, logging, observability, elk stack]
+
+  Testing:
+    - skill: unit testing
+      synonyms: [pytest, unittest, test automation, tdd, test driven development]
+    - skill: integration testing
+      synonyms: [api testing, end to end testing, e2e]

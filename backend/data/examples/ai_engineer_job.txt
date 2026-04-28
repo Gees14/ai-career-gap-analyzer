@@ -1,0 +1,37 @@
+AI Engineer — GenAI Platform Team
+Acme AI Labs | Remote | Full-time
+
+About the Role
+We are building the next generation of enterprise AI products powered by large language models. As an AI Engineer on our GenAI Platform team, you will design, build, and deploy production LLM applications, RAG pipelines, and AI-powered APIs.
+
+Required Qualifications
+- 3+ years of experience in software engineering or AI/ML engineering
+- Strong Python programming skills
+- Experience building production LLM applications using OpenAI, Anthropic, or open-source models
+- Hands-on experience with Retrieval Augmented Generation (RAG) pipelines
+- Proficiency with vector databases such as Pinecone, Qdrant, ChromaDB, or FAISS
+- Experience with prompt engineering and few-shot prompting
+- Knowledge of transformer models and Hugging Face ecosystem
+- Experience deploying APIs with FastAPI or similar frameworks
+- Familiarity with Docker and CI/CD workflows
+- Experience with LangChain or similar LLM orchestration frameworks
+
+Preferred Qualifications
+- Experience with LLM fine-tuning (LoRA, QLoRA, PEFT)
+- Familiarity with LLMOps: LLM evaluation, hallucination detection, output validation
+- Experience with Kubernetes for model serving
+- Knowledge of MLflow or Weights & Biases for experiment tracking
+- Experience with agentic AI frameworks and tool use / function calling
+- AWS or GCP cloud experience
+- Contributions to open-source AI/ML projects
+
+Responsibilities
+- Design and implement RAG pipelines with semantic search and vector databases
+- Build and optimise prompt engineering workflows
+- Deploy LLM-powered REST APIs to production
+- Evaluate model outputs and implement quality guardrails
+- Collaborate with ML researchers to productionise models
+- Write clean, tested, maintainable Python code
+
+Tech Stack
+Python, FastAPI, LangChain, OpenAI API, ChromaDB, Pinecone, Docker, GitHub Actions, AWS

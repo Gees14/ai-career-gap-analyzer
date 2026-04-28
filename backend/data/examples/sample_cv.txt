@@ -1,0 +1,55 @@
+JANE SMITH
+Senior Software Engineer → AI/ML Transition
+jane.smith@email.com | github.com/janesmith | linkedin.com/in/janesmith
+
+PROFESSIONAL SUMMARY
+Software engineer with 5 years of backend development experience, now focused on machine learning and AI engineering. Strong Python skills and recent hands-on work with NLP, transformer models, and retrieval systems. Completed several personal projects applying LLMs, RAG pipelines, and MLOps tooling. Seeking a role as an AI Engineer or ML Engineer.
+
+EXPERIENCE
+
+Senior Backend Engineer — TechCorp Ltd (2021–2024)
+- Designed and maintained REST APIs using Python and FastAPI serving 2M+ daily requests
+- Implemented async microservices architecture, reducing p99 latency by 35%
+- Wrote unit and integration tests using pytest, achieving 90%+ coverage
+- Set up CI/CD pipelines using GitHub Actions and Docker
+- Maintained PostgreSQL and Redis infrastructure on AWS
+
+Backend Engineer — StartupXYZ (2019–2021)
+- Built data ingestion pipelines processing 500K events/day using Python and Kafka
+- Developed Flask APIs and integrated third-party services
+- Contributed to SQL schema design and query optimisation
+
+PROJECTS
+
+RAG Document Assistant (Personal Project, 2024)
+- Built an end-to-end Retrieval Augmented Generation (RAG) system using Python, FastAPI, and ChromaDB
+- Integrated sentence-transformers for document embeddings and semantic search
+- Used LangChain for orchestration and OpenAI API for generation
+- Deployed with Docker and monitored with structured logging
+
+Sentiment Analysis Pipeline (Personal Project, 2023)
+- Fine-tuned a DistilBERT model for multi-class sentiment classification using Hugging Face Transformers
+- Achieved 91% accuracy on a 50K sample dataset
+- Tracked experiments with MLflow and registered the model in the MLflow Model Registry
+- Served the model as a FastAPI endpoint
+
+Text Classification API (Personal Project, 2023)
+- Built a TF-IDF + logistic regression baseline, then improved with a BERT-based classifier
+- Packaged as a Docker container with automated tests
+
+TECHNICAL SKILLS
+Languages: Python, SQL, JavaScript
+ML/DL: PyTorch, scikit-learn, Hugging Face Transformers, sentence-transformers
+GenAI/LLM: LangChain, OpenAI API, RAG, prompt engineering, ChromaDB, FAISS
+MLOps: MLflow, Docker, GitHub Actions, experiment tracking, model registry
+Backend: FastAPI, Flask, REST APIs, asyncio, PostgreSQL, Redis
+Cloud: AWS (S3, EC2), basic GCP
+Data: pandas, NumPy, Kafka
+
+EDUCATION
+BSc Computer Science — University of Southampton (2015–2019)
+First Class Honours | Dissertation: Neural text summarisation
+
+CERTIFICATIONS
+AWS Certified Developer – Associate (2023)
+Deep Learning Specialization — deeplearning.ai (2022)

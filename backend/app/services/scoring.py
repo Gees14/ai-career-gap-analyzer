@@ -89,10 +89,30 @@ class ScoringEngine:
 
     # ------------------------------------------------------------------
     def _build_cv_phrases(self, cv_text: str) -> list[str]:
-        """Split CV text into sentence-length phrases for semantic matching."""
+        """Split CV into overlapping chunks to preserve context for semantic matching."""
         import re
-        phrases = re.split(r"[.\n]+", cv_text)
-        return [p.strip() for p in phrases if len(p.strip()) > 20][:80]
+        # Split into sentences/lines first
+        raw = re.split(r"(?<=[.!?])\s+|\n+", cv_text)
+        sentences = [s.strip() for s in raw if len(s.strip()) > 15]
+
+        # Build 2-sentence chunks with 1-sentence overlap for context
+        chunks: list[str] = []
+        for i in range(len(sentences)):
+            chunk = " ".join(sentences[i : i + 2])
+            if len(chunk) > 20:
+                chunks.append(chunk)
+
+        # Also include individual sentences so short bullet points aren't lost
+        chunks.extend(s for s in sentences if len(s) > 20)
+
+        # Deduplicate while preserving order
+        seen: set[str] = set()
+        result: list[str] = []
+        for c in chunks:
+            if c not in seen:
+                seen.add(c)
+                result.append(c)
+        return result[:120]
 
     def _compute_category_scores(
         self,

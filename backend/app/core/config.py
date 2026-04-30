@@ -1,4 +1,4 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
 from typing import Optional
 
@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o-mini"
 
     # Embedding model (local, no API key required)
-    embedding_model: str = "all-MiniLM-L6-v2"
+    embedding_model: str = "paraphrase-multilingual-MiniLM-L12-v2"
     embedding_batch_size: int = 32
 
     # Upload limits
@@ -24,9 +24,10 @@ class Settings(BaseSettings):
     score_weight_exact: float = 0.6
     score_weight_semantic: float = 0.4
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+    )
 
 
 @lru_cache

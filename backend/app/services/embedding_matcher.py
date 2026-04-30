@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 logger = get_logger(__name__)
 
 _PARTIAL_MATCH_THRESHOLD = 0.60
-_STRONG_MATCH_THRESHOLD = 0.85
+_STRONG_MATCH_THRESHOLD = 0.75
 
 
 @lru_cache(maxsize=1)
@@ -37,7 +37,7 @@ class EmbeddingMatcher:
 
     def embed(self, texts: list[str]) -> np.ndarray:
         if not texts:
-            return np.empty((0, 384))
+            return np.empty((0, 768))
         return self._model.encode(texts, show_progress_bar=False, normalize_embeddings=True)
 
     def find_semantic_matches(

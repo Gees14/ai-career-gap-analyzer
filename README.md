@@ -1,9 +1,12 @@
 # AI Career Gap Analyzer
 
-An AI-powered full-stack application that compares a candidate CV against AI Engineer and ML Engineer job descriptions,
-extracts required skills, identifies missing skills, ranks candidate fit, and generates a structured improvement plan.
+![CI](https://github.com/Gees14/ai-career-gap-analyzer/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Built to demonstrate production-grade LLM application engineering, semantic matching, explainable scoring, FastAPI, React, Docker, and testing.
+A full-stack AI application that compares a candidate CV against AI/ML Engineer job descriptions, extracts required skills, identifies gaps, scores fit with a deterministic formula, and generates a structured improvement plan.
+
+Works fully offline — no API key required. Optional LLM enrichment via any OpenAI-compatible API.
 
 > **Disclaimer**: This tool is for guidance only. It does not replace professional career advice, human recruiters, or guarantee hiring outcomes. It does not invent candidate experience.
 
@@ -290,9 +293,7 @@ For `sample_cv.txt` (Python + FastAPI + RAG + MLflow engineer) vs `ai_engineer_j
 
 ---
 
-## Portfolio Value
-
-This project demonstrates the following AI/ML engineering skills:
+## Skills Demonstrated
 
 | Skill | Where Demonstrated |
 |---|---|

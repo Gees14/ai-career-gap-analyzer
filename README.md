@@ -15,7 +15,7 @@ Built to demonstrate production-grade LLM application engineering, semantic matc
 - **Job Description Analysis** — extract required/preferred skills, tools, cloud requirements, and years of experience
 - **Skills Taxonomy** — 15 categories, 70+ canonical skills, 200+ synonyms (RAG, LLMOps, MLOps, Cloud, NLP, etc.)
 - **Exact Skill Matching** — keyword + synonym normalisation with evidence snippets
-- **Semantic Matching** — sentence-transformers (`all-MiniLM-L6-v2`) cosine similarity for partial matches
+- **Semantic Matching** — sentence-transformers (`paraphrase-multilingual-MiniLM-L12-v2`) cosine similarity for partial matches, with full Spanish/English support
 - **Explainable Fit Score** — 0–100 score with category breakdown and plain-English explanation
 - **Gap Analysis** — exact list of missing required and preferred skills
 - **Optional LLM Enrichment** — profile summary, recommendations, resume suggestions, and 30/60/90 day plan
@@ -30,7 +30,7 @@ Built to demonstrate production-grade LLM application engineering, semantic matc
 | Layer | Technology |
 |---|---|
 | Backend | Python 3.11, FastAPI, Pydantic v2 |
-| Embeddings | sentence-transformers `all-MiniLM-L6-v2` (local) |
+| Embeddings | sentence-transformers `paraphrase-multilingual-MiniLM-L12-v2` (local, multilingual) |
 | Similarity | scikit-learn cosine similarity |
 | PDF Parsing | pdfplumber + pypdf (fallback) |
 | Optional LLM | OpenAI-compatible API (gpt-4o-mini) |
@@ -79,10 +79,10 @@ Skills are extracted from CV and job description using a YAML taxonomy with 200+
 Exact matches carry weight `0.6` in the category score.
 
 ### 2. Semantic Matching
-The CV is split into sentence-length phrases. Each unmatched job skill is embedded using
-`all-MiniLM-L6-v2`. Cosine similarity between job skill embedding and CV phrase embeddings:
-- ≥ 0.85 → strong semantic match
-- 0.60–0.85 → partial match (weight `0.4`)
+The CV is split into overlapping 2-sentence chunks for context preservation. Each unmatched job skill is embedded using
+`paraphrase-multilingual-MiniLM-L12-v2` (supports Spanish and English). Cosine similarity between job skill embedding and CV phrase embeddings:
+- ≥ 0.75 → strong semantic match
+- 0.60–0.75 → partial match (weight `0.4`)
 - < 0.60 → missing
 
 ### 3. Category Scoring

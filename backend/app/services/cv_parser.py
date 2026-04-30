@@ -19,7 +19,8 @@ _SECTION_PATTERNS: dict[str, list[str]] = {
         r"(?i)(projects?|personal\s+projects?|key\s+projects?|selected\s+projects?)\s*[:\-]?",
     ],
     "skills": [
-        r"(?i)(technical\s+skills?|skills?|competencies|expertise|technologies)\s*[:\-]?",
+        r"(?i)(technical\s+skills?|skills?\s+&\s+tools|skills?|competencies|expertise|technologies)\s*[:\-]?\s*\n",
+        r"(?i)^(technical\s+skills?|skills?|competencies|expertise|technologies)\s*$",
     ],
     "education": [
         r"(?i)(education|academic\s+background|qualifications?|degrees?)\s*[:\-]?",

@@ -1,5 +1,10 @@
 """Tests for scoring engine — reproducibility and correctness."""
 import pytest
+
+sentence_transformers = pytest.importorskip(
+    "sentence_transformers", reason="sentence-transformers not installed"
+)
+
 from app.services.skill_extractor import SkillExtractor
 from app.services.embedding_matcher import EmbeddingMatcher
 from app.services.scoring import ScoringEngine

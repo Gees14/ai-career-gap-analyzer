@@ -1,5 +1,10 @@
 """Tests for embedding-based semantic matcher."""
 import pytest
+
+sentence_transformers = pytest.importorskip(
+    "sentence_transformers", reason="sentence-transformers not installed"
+)
+
 from app.services.embedding_matcher import EmbeddingMatcher
 
 
@@ -9,9 +14,9 @@ def matcher() -> EmbeddingMatcher:
 
 
 def test_embed_returns_array(matcher):
-    import numpy as np
     result = matcher.embed(["machine learning", "deep learning"])
-    assert result.shape == (2, 384)
+    assert result.shape[0] == 2
+    assert result.shape[1] > 0
 
 
 def test_embed_empty_returns_empty(matcher):

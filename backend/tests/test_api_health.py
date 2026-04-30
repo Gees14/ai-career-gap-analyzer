@@ -5,6 +5,12 @@ from app.main import app
 
 client = TestClient(app)
 
+try:
+    import sentence_transformers
+    _HAS_SENTENCE_TRANSFORMERS = True
+except ImportError:
+    _HAS_SENTENCE_TRANSFORMERS = False
+
 
 def test_health_returns_ok():
     response = client.get("/health")
@@ -23,6 +29,7 @@ def test_skills_taxonomy_returns_categories():
     assert isinstance(data["Machine Learning"], list)
 
 
+@pytest.mark.skipif(not _HAS_SENTENCE_TRANSFORMERS, reason="sentence-transformers not installed")
 def test_match_endpoint_basic():
     from tests.conftest import SAMPLE_CV, AI_JOB
 

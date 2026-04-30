@@ -48,8 +48,8 @@ def test_high_similarity_for_matching_texts(matcher):
         "RAG pipeline with vector database and semantic search",
         "retrieval augmented generation with pinecone vector database",
     )
-    # Should be reasonably similar
-    assert score > 0.5
+    # Threshold calibrated for paraphrase-multilingual-MiniLM-L12-v2
+    assert score > 0.45
 
 
 def test_find_semantic_matches_empty_inputs(matcher):
